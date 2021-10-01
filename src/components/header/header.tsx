@@ -6,9 +6,9 @@ const Header = () => {
         <header>
             <h1>ITMO Lab</h1>
             <nav>
-                <a>Labs</a>
-                <a>Labs</a>
-                <a>Labs</a>
+                <a href="/">Labs</a>
+                <a href="/">Labs</a>
+                <a href="/">Labs</a>
             </nav>
         </header>
     )

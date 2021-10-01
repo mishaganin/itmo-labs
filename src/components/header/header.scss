@@ -4,9 +4,10 @@ body { background: #1abc9c; font-family: 'Lato', sans-serif; text-transform: upp
 
 header {
     text-align: justify;
-    height: 8em;
-    padding: 2em 5%;
-    color: #fff;
+    height: 4em;
+    padding: 2em 5% 0 5%;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
 
     h1 {
         float: left;
@@ -16,9 +17,12 @@ header {
         float: right;
         vertical-align: middle;
         margin-right: 10em;
+        transform: translate(0, 50%);
 
         a {
             margin: 10px;
+            color: #ffffff;
+            text-decoration: none;
         }
     }
 }
