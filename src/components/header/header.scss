@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
+* { padding: 0; margin: 0; }
+body { background: #1abc9c; font-family: 'Lato', sans-serif; text-transform: uppercase; letter-spacing: 1px;}
+
+header {
+    text-align: justify;
+    height: 8em;
+    padding: 2em 5%;
+    color: #fff;
+
+    h1 {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        vertical-align: middle;
+        margin-right: 10em;
+
+        a {
+            margin: 10px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 720px){
+    
+    header {
+        height: auto;
+    }
+    
+    header > div,
+    header > div h1,
+    header nav {
+        height: auto;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+    
+}
