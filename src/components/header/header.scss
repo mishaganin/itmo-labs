@@ -5,7 +5,7 @@ body { background: #1abc9c; font-family: 'Lato', sans-serif; text-transform: upp
 header {
     text-align: justify;
     height: 4em;
-    padding: 2em 5% 0 5%;
+    padding: 2em 12em 0 12em;
     color: #ffffff;
     border-bottom: 1px solid #ffffff;
 
@@ -16,7 +16,6 @@ header {
     nav {
         float: right;
         vertical-align: middle;
-        margin-right: 10em;
         transform: translate(0, 50%);
 
         a {
@@ -24,13 +23,16 @@ header {
             color: #ffffff;
             text-decoration: none;
         }
+
+        a:hover {
+
+        }
     }
 }
 
 
 
 @media screen and (max-width: 720px){
-    
     header {
         height: auto;
     }
