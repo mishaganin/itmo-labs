@@ -1,9 +1,11 @@
 .container {
-    height: 500px;
+    max-height: 1000px;
     margin: 5em 12em 0 12em;
     border: 3px solid #ffffff;
     // border-image-source: linear-gradient(145deg, rgba(255,204,52,1) 0%, rgba(255,130,0,1) 17%, rgba(233,53,122,1) 34%, rgba(123,54,195,1) 51%, rgba(140,83,211,1) 68%, rgba(115,111,227,1) 85%, rgba(77,183,250,1) 100%);
     // border-image-slice: 1;
     background: #505050;
-    background: linear-gradient(90deg, #454545 0%, #383838 35%, #313131 100%);
+    // background: linear-gradient(90deg, #454545 0%, #383838 35%, #313131 100%);
+    background: #000000;
+    line-height: 2em;
 }
