@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import ExtractFile from '../extract-file/extract-file';
-import Task from '../task/task';
-import Uploader from '../uploader/uploader';
+import { Route, Switch } from 'react-router';
+import TaskPage from '../task-content/task-content';
+import LoginPage from '../pages/login-page';
 import './container.scss';
 
 const Container = () => {
@@ -9,8 +9,10 @@ const Container = () => {
     // ExtractFile();
     return (
         <div className="container">
-            <Task/>           
-            <Uploader />
+            <Switch>
+                <Route exact path="/" component={TaskPage} />
+                <Route path="/login" component={LoginPage} />
+            </Switch>
         </div>
     )
 }

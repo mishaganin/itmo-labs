@@ -1,11 +1,11 @@
 import React from 'react';
-import './task.scss';
+import './task-content.scss';
 
 interface IState {
     taskText?: string;
 }
 
-export default class Task extends React.Component {
+export default class TaskContent extends React.Component {
     state = {
         taskText: `Лабораторная работа. uint1024_t
                     Задача

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Router, Route, Link } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Router, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import Container from '../container/container';
 import Header from '../header/header';
@@ -10,13 +10,11 @@ const history = createBrowserHistory();
 
 const App = () => {
   return (
-    <Router history={history}>
-      
-        <TopBar />
-        <Header />
-        <Container />
-        
-    </Router>
+    <BrowserRouter>
+      <TopBar />
+      <Header />
+      <Container />
+    </BrowserRouter>
   ) 
 }
 
