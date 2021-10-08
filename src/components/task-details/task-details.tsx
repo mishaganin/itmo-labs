@@ -1,11 +1,11 @@
 import React from 'react';
-import './task-content.scss';
+import './task-details.scss';
 
 interface IState {
     taskText?: string;
 }
 
-export default class TaskContent extends React.Component {
+export default class TaskDetails extends React.Component {
     state = {
         taskText: `Лабораторная работа. uint1024_t
                     Задача
@@ -33,7 +33,7 @@ export default class TaskContent extends React.Component {
     render() {
         return (
             <div className="task">
-                <h1 className="task__title">Linear algebra</h1>
+                <h1 className="container__title task__title">Linear algebra</h1>
                 <div className="task__text" dangerouslySetInnerHTML={{ __html: this.autoReplacer(this.state.taskText)}} />
             </div>
         )

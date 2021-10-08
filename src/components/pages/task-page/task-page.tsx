@@ -1,11 +1,11 @@
 import React from 'react';
-import TaskContent from '../task-content/task-content';
-import Uploader from '../uploader/uploader';
+import TaskDetails from '../../task-details/task-details';
+import Uploader from '../../uploader/uploader';
 
 const TaskPage = () => {
     return (
         <>
-            <TaskContent />
+            <TaskDetails />
             <Uploader />
         </>
     )

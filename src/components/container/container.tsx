@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Route, Switch } from 'react-router';
-import TaskPage from '../task-content/task-content';
-import LoginPage from '../pages/login-page';
+import TaskPage from '../pages/task-page/task-page';
+import LoginPage from '../pages/login-page/login-page';
 import './container.scss';
 
 const Container = () => {

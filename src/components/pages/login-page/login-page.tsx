@@ -1,9 +1,9 @@
 import React from 'react';
-import Login from '../login/login';
+import LoginDetails from '../../login-details/login-details';
 
 const LoginPage = () => {
     return (
-        <div>Login Page</div>
+        <LoginDetails />
     )
 }
 
