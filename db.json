@@ -1,10 +1,10 @@
 {
   "profiles": {
     "login": {
-      "loginInputValue": "Hey"
+      "loginInputValue": "234"
     },
     "password": {
-      "passwordInputValue": "23"
+      "passwordInputValue": "fdfs"
     }
   }
 }
