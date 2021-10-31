@@ -11,18 +11,6 @@ namespace webapi.Controllers
 	[Route("[controller]")]
 	public class GroupsController : ControllerBase
 	{
-		private static readonly string[] Names = new[]
-		{
-			"Evgeniy", "Emin", "Fedor", "Misha"
-		};
-
-		private readonly ILogger<GroupsController> _logger;
-
-		public GroupsController(ILogger<GroupsController> logger)
-		{
-			_logger = logger;
-		}
-
 		[HttpGet]
 		public ActionResult<Group> Get()
 		{
