@@ -5,7 +5,6 @@ class Student {
     string surname
     int ID
     string password
-    string group_number
     list labs[Lab]
     
     return_list_of_labs(ID, labs)
@@ -23,7 +22,7 @@ class Group {
     string group_number
     Student student
 
-    string return_list_of_students(group_number)
+    string get_list_of_students(group_number)
 }
 
 class Lab {
@@ -41,7 +40,8 @@ class Lab {
 
 class File {
     string name
-    string any_type_info
+    string info
+    string extension
     void pin(name)
     void read(name)
 }
