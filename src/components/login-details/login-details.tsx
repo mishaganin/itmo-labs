@@ -13,13 +13,12 @@ const LoginDetails = () => {
         e.preventDefault()
         setPasswordInputValue(e.target.value)
     }
-    const handleSubmitForm = (e: any) => {
+    const handleSubmitForm = async (e: any) => {
         e.preventDefault()
-        axios.post('http://localhost:8080/profiles', {
-            "login": {loginInputValue},
-            "password": {passwordInputValue}
-        })
-        console.log('HEEEEEEEEEEEEEY wowowo')
+        await axios.get('http://localhost:8080/profiles')
+            .then(res => {
+                console.log(res);
+            });
     }
     return (
         <div className="login-details">
