@@ -1,0 +1,57 @@
+@startuml wow
+
+class Student {
+    string name
+    string surname
+    int ID
+    string password
+    list labs[Lab]
+    
+    return_list_of_labs(ID, labs)
+}
+
+class Teacher {
+    int ID
+    string password
+    string full_name
+    string subject
+
+}
+
+class Group {
+    string group_number
+    Student student
+
+    string get_list_of_students(group_number)
+}
+
+class Lab {
+    string subject
+    string description
+    string owner
+    int number
+
+    string view_lab(subject, number)
+    void add_lab(subject, description)
+    void send_lab(subject, number, text, owner)
+    void check_lab(subject, owner)
+    string lab_feedback(feedback)
+}
+
+class File {
+    string name
+    string info
+    string extension
+    void pin(name)
+    void read(name)
+}
+
+Teacher --> File : write feedback
+Teacher -> Group : see students
+Student --> File : read feedback
+Group --|> Student
+Student --|> Lab
+Student --> Lab : read and send
+Teacher --> Lab : create
+
+@enduml
