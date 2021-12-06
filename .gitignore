@@ -25,3 +25,5 @@ yarn-error.log*
 /webapi/.vs
 
 /src/react-app-env.d.ts
+
+/.idea

@@ -1,9 +1,13 @@
-import React from 'react';
+// @ts-nocheck
+
 import LoginDetails from '../../login-details/login-details';
 
-const LoginPage = () => {
+const LoginPage = (isLoggedIn: boolean, onLogin: Function) => {
     return (
-        <LoginDetails />
+        <LoginDetails 
+            isLoggedIn={isLoggedIn}
+            onLogin={onLogin}
+        />
     )
 }
 

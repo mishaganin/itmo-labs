@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-const LoginDetails = () => {
+const LoginDetails = (isLoggedIn: boolean, onLogin: Function) => {
     const [loginInputValue, setLoginInputValue] = useState<string>('')
     const [passwordInputValue, setPasswordInputValue] = useState<string>('')
+
     const handleLoginInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         e.preventDefault()
         setLoginInputValue(e.target.value)

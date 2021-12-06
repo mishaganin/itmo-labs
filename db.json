@@ -1,16 +1,16 @@
 {
   "profiles": {
     "firstName": {
-      "firstNameInputValue": "a"
+      "firstNameInputValue": "1"
     },
     "middleName": {
-      "middleNameInputValue": "b"
+      "middleNameInputValue": "2"
     },
     "lastName": {
-      "lastNameInputValue": "c"
+      "lastNameInputValue": "3"
     },
     "password": {
-      "passwordInputValue": "d"
+      "passwordInputValue": "4"
     }
   }
 }
