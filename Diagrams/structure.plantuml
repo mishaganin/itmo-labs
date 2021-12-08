@@ -1,0 +1,18 @@
+@startuml
+
+class Student {
+    int ID
+    string Name
+    string Surename
+    Group group
+}
+
+class Group {
+    string Name
+    Student[] Students
+}
+
+Group "one" <-- "one" Student 
+Group " one" --> "many" Student
+
+@enduml

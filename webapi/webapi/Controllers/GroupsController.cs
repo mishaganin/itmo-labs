@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using webapi.Models;
 
 namespace webapi.Controllers
 {
@@ -11,18 +12,6 @@ namespace webapi.Controllers
 	[Route("[controller]")]
 	public class GroupsController : ControllerBase
 	{
-		private static readonly string[] Names = new[]
-		{
-			"Evgeniy", "Emin", "Fedor", "Misha"
-		};
-
-		private readonly ILogger<GroupsController> _logger;
-
-		public GroupsController(ILogger<GroupsController> logger)
-		{
-			_logger = logger;
-		}
-
 		[HttpGet]
 		public ActionResult<Group> Get()
 		{
