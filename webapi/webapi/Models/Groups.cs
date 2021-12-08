@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace webapi.Models
 {
@@ -6,6 +7,6 @@ namespace webapi.Models
 	{
 		public string Name { get; set; }
 
-		public Student[] Students { get; set; }
+        public List<Student> Students { get; set; }
 	}
 }

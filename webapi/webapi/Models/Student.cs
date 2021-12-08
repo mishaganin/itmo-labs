@@ -10,5 +10,7 @@ namespace webapi.Models
 
 		public int ID { get; set; }
 
+		public string Group { get; set; }
+
 	}
 }
